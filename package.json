@@ -1,0 +1,33 @@
+{
+  "name": "origami",
+  "version": "1.0.0",
+  "description": "origami landing page",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://seraphx93@bitbucket.org/seraphx93/origami.git"
+  },
+  "keywords": [
+    "origami",
+    "landing",
+    "page"
+  ],
+  "author": "Luis Vilchez",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/seraphx93/origami#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "hover.css": "^2.3.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.0"
+  }
+}

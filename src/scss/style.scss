@@ -1,0 +1,151 @@
+$dark-overlay: rgba(0, 0, 0, 0.7);
+$primary-blue: #17a2b8;
+$light-blue: #35bcd1;
+$dark-color: #1c2331;
+
+@media (min-width: 552px) and (max-width: 767.98px) {
+  #icon-boxes .card {
+    margin-bottom: 30px;
+  }
+
+  #gallery img {
+    margin-bottom: 30px;
+  }
+
+  #gallery .col-xs-12 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+footer a:link,
+footer a:visited,
+nav a:link,
+nav a:visited {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+footer a:hover,
+footer a:active,
+nav a:hover,
+nav a:active {
+  border-bottom: 1px solid $primary-blue;
+}
+
+.navbar {
+  .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+  }
+
+  .nav-item.active {
+    border-left: $primary-blue 3px solid;
+  }
+
+  box-shadow: 0 2px 1px $light-blue;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-image-1 {
+  background: url("../img/image1.jpg");
+  background-position: center; //Remove this for small media queries
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.carousel-image-2 {
+  background: url("../img/image2.jpeg");
+  background-position: center; //Remove this for small media queries
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.carousel-image-3 {
+  background: url("../img/image3.jpeg");
+  background-position: center; //Remove this for small media queries
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.card {
+  border-top: $primary-blue 5px solid;
+}
+
+#heading1 {
+  position: relative;
+  min-height: 250px;
+  background: url("../img/img1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #ffffff;
+}
+
+#heading2 {
+  position: relative;
+  min-height: 250px;
+  background: url("../img/img3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #ffffff;
+}
+
+#dark-overlay {
+  position: absolute;
+  background-color: $dark-overlay;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Rotación para la galeria */
+.hvr-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-rotate:hover,
+.hvr-rotate:focus,
+.hvr-rotate:active {
+  -webkit-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+
+#footer-band {
+  background-color: $primary-blue;
+}
+
+footer {
+  background-color: $dark-color;
+}
+
+strong {
+  border-bottom: 2px solid $primary-blue;
+}
